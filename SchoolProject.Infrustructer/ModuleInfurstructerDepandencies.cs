@@ -1,6 +1,6 @@
 ﻿namespace SchoolProject.Infrustructer
 {
-    public class Class1
+    public class ModuleInfurstructerDepandencies
     {
 
     }

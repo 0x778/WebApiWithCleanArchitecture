@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace SchoolProject.Infrustructer.Data
 {
@@ -12,7 +13,7 @@ namespace SchoolProject.Infrustructer.Data
     {
         public ApplicationDBContext()
         {
-            
+         
         }
 
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
