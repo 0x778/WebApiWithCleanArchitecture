@@ -6,9 +6,11 @@ namespace SchoolProject.Infrustructer
 {
     public static class ModuleInfurstructerDepandencies
     {
-        public static IServiceCollection AddInfurstructerDepandencies (this IServiceCollection services)
+        //This is Extention Method 
+        public static IServiceCollection AddInfurstructerDepandencies(this IServiceCollection services)
         {
             services.AddTransient<IStudentRepository, StudentRepository>();
             return services;
         }
+    }
 }

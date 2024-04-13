@@ -9,18 +9,19 @@ using System.Web;
 
 namespace SchoolProject.Infrustructer.Data
 {
+    //
     public class ApplicationDBContext :DbContext
     {
         public ApplicationDBContext()
         {
          
         }
-
+        //prepar for Migration
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
         {
             
         }
-
+        //Tables that will Generated using Migration
         public DbSet<Department> departments { get; set; }
         public DbSet<Student> students { get; set; }   
         public DbSet<DepartmetSubject> departmentSubjects { get; set; }
