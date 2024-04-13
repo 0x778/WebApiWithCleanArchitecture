@@ -9,6 +9,9 @@ namespace SchoolProject.Data.Entities
 {
     public partial class Department
     {
+        //Department Entitie
+        //used ptro to avoid null
+        //ICollection and Hashset to avoid repeat the recored
         public Department()
         {
             Students = new HashSet<Student>();

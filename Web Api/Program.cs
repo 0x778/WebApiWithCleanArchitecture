@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using SchoolProject.Infrustructer;
+using SchoolProject.Infrustructer.Abstracts;
 using SchoolProject.Infrustructer.Data;
+using SchoolProject.Infrustructer.Repositories;
+using SchoolProject.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +19,11 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("dbcontext"));
 });
+
+#region Depandency Injection
+builder.Services.AddInfurstructerDepandencies()
+                .AddServiceDepandencies();
+#endregion
 
 var app = builder.Build();
 

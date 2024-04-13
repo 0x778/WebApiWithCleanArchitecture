@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SchoolProject.Data.Entities
 {
-
+    
     public class DepartmetSubject
     {
         [Key]
