@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SchoolProject.Core;
 using SchoolProject.Infrustructer;
 using SchoolProject.Infrustructer.Abstracts;
 using SchoolProject.Infrustructer.Data;
@@ -22,10 +23,11 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 
 #region Depandency Injection
 builder.Services.AddInfurstructerDepandencies()
-                .AddServiceDepandencies();
+                .AddServiceDepandencies()
+                .AddModuleCoreDepandencies();
 #endregion
 
-var app = builder.Build();
+var app = builder.Build(); 
 
 
 // Configure the HTTP request pipeline.
