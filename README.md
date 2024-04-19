@@ -4,7 +4,18 @@
 
 MySchoolProjectWebApi is a .NET Core Web API project designed following Clean Architecture principles. It prioritizes separation of concerns, maintainability, and testability to ensure the development of robust and scalable web applications.
 
+## Artical
+
+This Project is in progress status 
+I used in it for now a CRQS , Mediator , IRepository , Code First ,  Migration , Dependance Injection 
+
+This is The Modul of it 
+
+![Clean-Architecture-1](https://github.com/0x778/WebApiWithCleanArchitecture/assets/144445216/9db064b9-7460-42bb-9c2a-4612cea7b1b0)
+
 ## Table of Contents
+
+
 
 1. [Introduction](#introduction)
 2. [Principles](#principles)
