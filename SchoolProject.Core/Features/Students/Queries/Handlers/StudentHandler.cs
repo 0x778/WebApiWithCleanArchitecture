@@ -22,9 +22,10 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
         #endregion
 
         #region Constructors
-        public StudentHandler(IStudentService studentService)
+        public StudentHandler(IStudentService studentService , IMapper mapper)
         {
             _studentService = studentService;
+            _mapper = mapper;
         }
         #endregion
         
