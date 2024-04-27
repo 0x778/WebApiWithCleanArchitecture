@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace SchoolProject.Core.Mapping.Students
 {
-    public class StudentProfile : Profile
+    public partial class StudentProfile : Profile
     {
         public StudentProfile() 
         {
-            CreateMap<Student, GetStudentListResponse>()
-                    .ForMember(dest => dest.DepartmentName, option => option.MapFrom(source => source.Department.DName));
+            GetStudentListMapping();
+            
         } 
     }
 }
