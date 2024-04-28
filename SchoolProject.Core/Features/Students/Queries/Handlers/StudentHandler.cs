@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace SchoolProject.Core.Features.Students.Queries.Handlers
 {
-    internal class StudentHandler : IRequestHandler<GetStudentListQuery, List<GetStudentListResponse>>
+    internal class StudentHandler : ReasponseHandler ,IRequestHandler<GetStudentListQuery,Reasponse<List<GetStudentListResponse>>>
     {
 
         #region Fields
@@ -30,11 +30,11 @@ namespace SchoolProject.Core.Features.Students.Queries.Handlers
         #endregion
         
         #region Handle Functions
-        public async Task<List<GetStudentListResponse>> Handle(GetStudentListQuery request, CancellationToken cancellationToken)
+        public async TaskReasponse<<List<GetStudentListResponse>>> Handle(GetStudentListQuery request, CancellationToken cancellationToken)
         {
             var StudentList = await _studentService.GetStudentsListAsync();
             var StudentListMapper = _mapper.Map<List<GetStudentListResponse>>(StudentList);
-            return StudentListMapper;
+            return Success(StudentListMapper);
         }
         #endregion
     }
