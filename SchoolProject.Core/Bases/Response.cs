@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SchoolProject.Core.Bases
 {
-    internal class Response
+    public class Response<T>
     {
     }
 }

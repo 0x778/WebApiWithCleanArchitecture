@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SchoolProject.Core.Bases
 {
-    internal class esponseHandler
+    //Retrive Errors , Not Found ,..,etc,..
+    internal class ResponseHandler
     {
     }
 }
